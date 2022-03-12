@@ -70,7 +70,7 @@ endif ( )
 ## System dependencies are found with CMake's conventions
 
 # OpenCV
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 3.4.5 REQUIRED)
 
 if(OpenCV_VERSION_MAJOR LESS 3)
   message( FATAL_ERROR "OpenCV 3 or 4 is required!  Current version : ${OpenCV_VERSION}" )
